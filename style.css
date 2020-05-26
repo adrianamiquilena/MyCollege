@@ -1,0 +1,320 @@
+/*---------  DEFAULT: SMARTPHONES ---------*/
+*{
+    position: relative;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 226, 226);
+}
+body{
+    background-color: white;
+}
+
+.bckimg{
+    background-image: url("images/university-600.jpg");
+    background-size: cover;
+    background-position: center;
+    height:0;
+    padding-top: 75%;  
+    position: relative; 
+}
+#logo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#logo p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 2.2em;
+    font-style: italic;
+    text-align: center;
+    /* position: absolute; */
+    /* top: 5%; */
+}
+.uno {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.bckimg a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 3px;
+    background: #8393ca;
+    border-radius: 5px;
+    padding: 3px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bckimg a:hover {
+    background: #393535;
+}
+#topmenu ul {
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#topmenu ul li, footer ul li{
+    text-align: center;
+    padding: 3px;
+    background: #4a525f;
+    font-style: italic;
+    border-bottom: white 2px solid;
+}
+#topmenu ul li:hover, footer ul li:hover {
+    background: #393535;
+}
+#topmenu ul li a, footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+/*---- FILA 1 ----*/
+
+#fila1-iconos{
+    display: flex;
+    justify-content: space-around;
+}
+#fila1-iconos p{
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+.click {
+    max-width: 30vw;
+}
+#fila-texto{
+    background-color: rgb(228, 226, 226);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 1.6em;
+}
+#fila-texto a{
+    color: #ec008c;
+}
+/*---- FILA 2 ----*/
+
+#fila-2{
+    background-color: #a864a8;
+    color: white;
+    padding: 0.3em;
+}
+#fila-2 p{
+    font-size: 1.5em;
+    text-align: center;
+}
+#tom, #sarah {
+    text-align: center;
+}
+#fila-texto2{
+    background-color: rgb(228, 226, 226);
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.6em;
+}
+#fila-texto2 a{
+    color: #ec008c;
+}
+#volley{
+    width:100%;
+}
+/*------ FOOTER ------*/
+footer{
+    text-align: center;
+    background-color: rgb(228, 226, 226);
+}
+footer p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* --------------------DEVICES > 600PX (O SEA MAS GRANDES QUE UN TELF) ------- */
+
+@media screen and (min-width: 600px) {
+    .bckimg{
+        background-image: url("images/university-900.jpg");
+    }
+    #logo p {
+        font-size: 2.5em;
+    }
+    #topmenu {
+        position: absolute;
+        top: 15%;
+        width: 100%;   
+    }
+    #topmenu ul{
+        display:flex; 
+        justify-content: center;   
+        background-color: white;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;  
+    }
+    #topmenu ul li a{
+        background-color: transparent;
+        color: #4e525f;
+    }
+    #topmenu ul li{
+        background-color: white;
+        border-right: 1px solid #4e525f;
+        border-bottom: none;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #topmenu li:last-child{
+        border-right: none;
+    }
+    #topmenu ul li:hover, #topmenu ul li a:hover{
+        background-color: #ccd2d8;
+    }
+    .uno {
+        font-size: 2.2em;
+    }
+    .bckimg a {
+        font-size: 2em;
+        bottom: 30%;
+    }
+    /*-- FILA 1 --*/
+    #fila-1{
+        display:flex;
+    }
+    #fila1-iconos{
+        width: 60vw;    
+        border: 3px red solid;
+    }
+    .icon {
+        display:flex;
+        flex-direction: column;
+        border: 1px blue solid;        
+    }
+    .icon a{
+        text-align: center;
+        border: 1px green solid;
+    }
+    .click {
+        max-width: 18vw;
+        padding-top: 5px;
+        border: orangered solid 1px;
+    }
+    #fila1-iconos p{ 
+        border: 2px blue dashed; 
+        font-size:1.2em;
+    }
+    #fila-texto{
+        width: 40vw;
+        position: relative;
+        text-align: center;
+        padding:0;
+    } 
+    #fila-texto p{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #fotos{
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: space-evenly;
+    }
+        /*-- FILA 2 --*/
+    #fila-2 p{
+        font-size: 1.7em;
+    }
+        /*-- FILA 3 --*/
+    #fila-3 {
+        display:flex;
+    }/*
+    #fila-3 img{
+        max-width: 50vw;  
+    }*/
+    #fila-texto2{
+        display:flex;
+        align-items: center;
+        border: 2px blue solid;
+    }
+        /*-- FOOTER --*/
+    footer ul{
+        display:flex;
+        justify-content: space-around;
+        background-color: #8393ca;
+    }
+    footer ul li{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-size: 1.2em;
+        background-color: transparent;
+        border-bottom: none;
+    }
+    footer p{
+        font-size: 1.2em;
+    }
+}
+/*------- DEVICES > 900PX (O SEA MAS GRANDES QUE UNA TABLET) ---- */
+
+@media screen and (min-width: 900px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #todo{
+        max-width: 1100px; 
+    }
+    .bckimg{
+        background-image: url("images/university-1100.jpg");
+    }
+    #logo p {
+        font-size: 5em;
+    }
+    #logo {
+        top: 12%;
+    }
+    #topmenu {
+        top: 25%;   
+    }
+    #topmenu ul{        
+        justify-content: flex-end;  
+        background-color: transparent;
+        font-size: 1.5em;
+    }
+    #topmenu ul li{
+        background-color: transparent;
+    }   
+    #topmenu ul li:hover, #topmenu ul li a:hover{
+        background-color: rgb(174, 189, 194);
+    }
+    .uno {
+        font-size: 3.5em;
+    } 
+    .bckimg a {
+        font-size: 3.5em;
+    }
+        /*-- FILA 1 --*/
+
+    #fila1-iconos p{
+        border: 2px red solid;
+    }   
+    
+    #fila-texto{
+        background-color: white;
+        font-size: 2em;    
+    }
+
+
+
+}
+
+
+
+
+
